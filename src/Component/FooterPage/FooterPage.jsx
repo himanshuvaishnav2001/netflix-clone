@@ -29,9 +29,9 @@ export default function FooterPage() {
     ]
 
   return (
-    <div className='relative bottom-0 w-full -z-0 '>
+    <div className='flex flex-col min-h-screen '>
 
-            <div className='bg-black pt-16  bottom-0 w-full '>
+            <div className='flex-grow bg-black pt-16  bottom-0 w-full '>
 
 
                             <div className=' pl-44  pb-10 text-[18px] max-sm:pl-14 max-sm:text-[12px] text-[#ffffffb3]'>
@@ -64,7 +64,7 @@ export default function FooterPage() {
                             </div>
 
 
-                            <div className=' pl-44 pb-28 text-[16px] text-[#ffffffb3] max-sm:pl-14 max-sm:text-[12px]'>
+                            <div className=' pl-44 pb-28 py-4 text-[16px] text-[#ffffffb3] max-sm:pl-14 max-sm:text-[12px]'>
                                     
                                     <h1>
                                         Netflix India
