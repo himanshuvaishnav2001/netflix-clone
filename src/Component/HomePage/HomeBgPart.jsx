@@ -75,10 +75,10 @@ export default function HomeBgPart() {
 
             {/* ----------------------Poster inside Part-------------------- */}
 
-            <div className='xl:w-1/2 md:w-3/4 absolute bottom-12'>
+            <div className='xl:w-1/2 md:w-3/4 absolute bottom-12 max-sm:bottom-1 max-sm:ml-[-40px]  '>
 
-                <img src={BgInsidePhoto} className='xl:w-52 md:w-40 sm:w-24 ml-20' />
-                <p className='text-white xl:text-[16px] md:text-[12px] sm:text-[10px] pl-20 mt-5'>
+                <img src={BgInsidePhoto} className='xl:w-52 md:w-40 sm:w-24 ml-20 max-sm:w-10 max-sm:mb-[-20px]' />
+                <p className='text-white xl:text-[16px] md:text-[12px] max-sm:text-[6px] pl-20 mt-5 max-sm:mb-[-20px] '>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere illo amet atque nostrum obcaecati voluptate voluptatem officiis, commodi exercitationem illum excepturi sapiente, dolorem voluptatum necessitatibus ullam hic? Maiores, quia.
                 </p>
 
@@ -86,15 +86,15 @@ export default function HomeBgPart() {
 
                 <div>
 
-                <button className='xl:w-28 md:w-24 sm:w-20 h-10 bg-[#ffffffdc] text-black ml-20 mt-7'>
-                    <div className='flex place-content-center'><h1 className=' text-xs mt-2 mr-2'> <FaPlay /> </h1> <h1 className='font-bold'> play </h1> </div>
+                <button className='xl:w-28 max-md:w-16 max-sm:w-10 h-10 max-sm:h-[17px] max-md:text-sm max-sm:text-[4px] bg-[#ffffffdc] text-black ml-20 mt-7'>
+                    <div className='flex place-content-center'><h1 className=' text-xs max-md:text-[10px]  max-sm:text-[3px] mt-2 mr-2 max-md:mr-1 max-sm:mr-1 '> <FaPlay /> </h1> <h1 className='font-bold'> play </h1> </div>
                 </button>
 
                 </div>
 
                 <div>
 
-                <button className='xl:w-28 md:w-24 sm:w-20 h-10 bg-[#6d6d6e81] font-bold text-white ml-6 mt-7 hover:bg-[#9b9ba2b9] '>
+                <button className='xl:w-28 md:w-24 max-sm:w-10 h-10 max-sm:h-[17px] max-md:text-sm max-sm:text-[4px] bg-[#6d6d6e81] font-bold text-white ml-6 mt-7 hover:bg-[#9b9ba2b9] '>
                   More Info
                 </button>
 
@@ -123,10 +123,10 @@ export default function HomeBgPart() {
 <div className='text-white relative'>
 
 
-        <h1 className='font-bold text-xl ml-16  absolute   '> Popular on Netflix</h1>
+        <h1 className='font-bold text-xl ml-16  absolute  max-sm:text-[10px] max-sm:ml-10 '> Popular on Netflix</h1>
 
 
-        <div className='flex lg:w-11/12 xl:w-11/12 md:w-10/12 sm:w-9/12 xl:ml-16 md:ml-16 sm:ml-16 mt-5  overflow-x-scroll Scrollbar-hide'>
+        <div className='flex lg:w-11/12 xl:w-11/12 md:w-10/12 max-sm:w-9/12 xl:ml-16 md:ml-16 max-sm:ml-1 mt-5  overflow-x-scroll Scrollbar-hide'>
         { PhotoData2.map((val, idx)=>{
                 return(
                         <NewMovies pitems={val} key={idx} />
@@ -139,10 +139,10 @@ export default function HomeBgPart() {
         <div className='text-white relative mt-10'>
 
 
-        <h1 className='font-bold text-xl ml-16  absolute  '> Next to Watch </h1>
+        <h1 className='font-bold text-xl ml-16  absolute max-sm:text-[10px] max-sm:ml-10 '> Next to Watch </h1>
 
 
-        <div className='flex lg:w-11/12 xl:w-11/12 md:w-10/12 sm:w-9/12 xl:ml-16 md:ml-16 sm:ml-16   overflow-x-scroll Scrollbar-hide'>
+        <div className='flex lg:w-11/12 xl:w-11/12 md:w-10/12 max-sm:w-9/12 xl:ml-16 md:ml-16 max-sm:ml-1   overflow-x-scroll Scrollbar-hide'>
         {PhotoData.map((val, idx)=>{
                 return(
                         <NewMovies pitems={val} key={idx} />
@@ -158,10 +158,10 @@ export default function HomeBgPart() {
         <div className='text-white relative mt-10'>
 
 
-        <h1 className='font-bold text-xl ml-16  absolute  '> Animation </h1>
+        <h1 className='font-bold text-xl ml-16  absolute max-sm:text-[10px] max-sm:ml-10  '> Animation </h1>
 
 
-        <div className='flex lg:w-11/12 xl:w-11/12 md:w-10/12 sm:w-9/12 xl:ml-16 md:ml-16 sm:ml-16   overflow-x-scroll Scrollbar-hide'>
+        <div className='flex lg:w-11/12 xl:w-11/12 md:w-10/12 max-sm:w-9/12 xl:ml-16 md:ml-16 max-sm:ml-1   overflow-x-scroll Scrollbar-hide'>
         {animationDB.map((val, idx)=>{
                 return(
                         <NewMovies pitems={val} key={idx} />
@@ -197,7 +197,7 @@ function NewMovies({pitems}){
   return(
     <div>
 
-            <div className='w-64  mr-4'>
+            <div className='w-64  mr-4 max-sm:mr-0'>
 
             
 
@@ -206,14 +206,12 @@ function NewMovies({pitems}){
             
 
             
-                    <img onClick={databases} src={pitems.Photo} className='w-64 h-48 rounded-md bg-contain ' /> 
-                    
-                    
+                    <img onClick={databases} src={pitems.Photo} className='w-64 h-48 rounded-md bg-contain max-sm:w-9/12 max-sm:h-32 max-sm:ml-14 max-sm:mr-20'  /> 
                     
               
 
             </div>
-            <h1 className='text-center pt-3 xl:text-base max-lg:text-[12px]  max-md:text-[10px] max-sm:text-[10px] '> {pitems.Movie} {pitems.movie} </h1>
+            <h1 className='text-center  pt-3 xl:text-base max-lg:text-[12px]  max-md:text-[10px] max-sm:text-[10px] '> {pitems.Movie} {pitems.movie} </h1>
             </div>
 
           {/* additional work------->>>>>>>> */}
@@ -255,15 +253,15 @@ function NewMovies({pitems}){
 
                                         <div>
 
-                                        <button className='xl:w-28 md:w-24 sm:w-20 h-10 text-[#ffffffdc] xl:text-base lg:text-base bg-[#de3232] hover:bg-[#b41616] rounded-md ml-10 mt-7'>
-                                            <div className='flex place-content-center'><h1 className=' text-xs mt-2 mr-2'> <FaPlay /> </h1> <h1 className='font-bold'> play </h1> </div>
+                                        <button className='xl:w-28 max-md:w-20 max-sm:w-16 h-10 text-[#ffffffdc] xl:text-base max-lg:text-base max-md:text-sm max-sm:text-xs bg-[#de3232] hover:bg-[#b41616] rounded-md ml-10 mt-7'>
+                                            <div className='flex place-content-center'><h1 className=' text-xs max-md:text-[10px] max-sm:text-[8px] mt-1 mr-1'> <FaPlay /> </h1> <h1 className='font-bold'> play </h1> </div>
                                         </button>
 
                                         </div>
 
                                         <div>
 
-                                        <button className='xl:w-32 md:w-24 sm:w-20 h-11 xl:text-base lg:text-base bg-[#6d6d6e81] font-bold text-white ml-6 mt-7 rounded-md hover:bg-[#9b9ba2b9] '>
+                                        <button className='xl:w-32 max-md:w-24 max-sm:w-20 h-11 xl:text-base max-lg:text-base max-md:text-sm max-sm:text-xs bg-[#6d6d6e81] font-bold text-white ml-6 mt-7 rounded-md hover:bg-[#9b9ba2b9] '>
                                           More Info
                                         </button>
 

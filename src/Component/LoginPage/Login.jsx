@@ -7,7 +7,7 @@ export default function Login() {
   return (
     <div>
 
-<div style={{backgroundImage:`url(${BgPhoto})`}} className='h-[775px]'>
+<div style={{backgroundImage:`url(${BgPhoto})`}} className='h-[1000px]'>
 
     {/* ---------------Logo Part---------------- */}
 

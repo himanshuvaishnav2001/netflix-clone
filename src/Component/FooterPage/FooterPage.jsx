@@ -29,9 +29,9 @@ export default function FooterPage() {
     ]
 
   return (
-    <div>
+    <div className='relative bottom-0 w-full -z-0 '>
 
-            <div className='bg-black pt-16'>
+            <div className='bg-black pt-16  bottom-0 w-full '>
 
 
                             <div className=' pl-44 pb-10 text-[18px] text-[#ffffffb3]'>
