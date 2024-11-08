@@ -93,7 +93,7 @@ function LoginPage(){
 
                     <div className='pt-4'>
 
-                    <input value={password} onChange={handlePasswordChange} placeholder='password' className='text-[16px] pl-5 w-72 h-14 bg-[rgba(0,0,0,0.1)] border-[1px] rounded-[3px]  border-neutral-600'/>
+                    <input value={password} type='password' onChange={handlePasswordChange} placeholder='password' className='text-[16px] pl-5 w-72 h-14 bg-[rgba(0,0,0,0.1)] border-[1px] rounded-[3px]  border-neutral-600'/>
 
                     </div>
 
