@@ -201,12 +201,12 @@ function NewMovies({pitems}){
 
             
 
-            <div className='flex  mt-16'>
+            <div className='flex  mt-16 '>
 
             
 
             
-                    <img onClick={databases} src={pitems.Photo} className='w-64 h-48 rounded-md bg-contain max-sm:w-9/12 max-sm:h-32 max-sm:ml-14 max-sm:mr-20'  /> 
+                    <img onClick={databases} src={pitems.Photo} className='w-64 h-48 rounded-md bg-contain max-sm:w-9/12 max-sm:h-32 max-sm:ml-14 max-sm:mr-0'  /> 
                     
               
 
@@ -241,9 +241,9 @@ function NewMovies({pitems}){
                                                                             &times;
                                       </div>
                                      
-                                     <div className='xl:w-1/2 md:w-3/4 absolute bottom-10  text-white text-2xl  font-bold'>
+                                     <div className='xl:w-1/2 md:w-3/4 absolute bottom-10 max-sm:bottom-4 text-white text-2xl  font-bold'>
 
-                                     <h1 className=' pt-3 pl-10 xl:text-2xl max-lg:text-xl  max-md:text-lg max-sm:text-[14px] '> {pitems.Movie} {pitems.movie} </h1>
+                                     <h1 className=' pt-3 pl-10 max-sm:pl-3 xl:text-2xl max-lg:text-xl  max-md:text-lg max-sm:text-[14px] '> {pitems.Movie} {pitems.movie} </h1>
 
 
                 
@@ -253,15 +253,15 @@ function NewMovies({pitems}){
 
                                         <div>
 
-                                        <button className='xl:w-28 max-md:w-20 max-sm:w-16 h-10 text-[#ffffffdc] xl:text-base max-lg:text-base max-md:text-sm max-sm:text-xs bg-[#de3232] hover:bg-[#b41616] rounded-md ml-10 mt-7'>
-                                            <div className='flex place-content-center'><h1 className=' text-xs max-md:text-[10px] max-sm:text-[8px] mt-1 mr-1'> <FaPlay /> </h1> <h1 className='font-bold'> play </h1> </div>
+                                        <button className='xl:w-28 max-md:w-20 h-10 text-[#ffffffdc] xl:text-base max-lg:text-base max-md:text-sm max-sm:text-[8px] bg-[#de3232] hover:bg-[#b41616] rounded-md ml-10 mt-7 max-sm:ml-3 max-sm:mt-3 max-sm:w-10 max-sm:h-10'>
+                                            <div className='flex place-content-center'><h1 className=' text-xs max-md:text-[10px] max-sm:text-[6px] mt-1 mr-1 max-sm:mt-2'> <FaPlay /> </h1> <h1 className='font-bold'> play </h1> </div>
                                         </button>
 
                                         </div>
 
                                         <div>
 
-                                        <button className='xl:w-32 max-md:w-24 max-sm:w-20 h-11 xl:text-base max-lg:text-base max-md:text-sm max-sm:text-xs bg-[#6d6d6e81] font-bold text-white ml-6 mt-7 rounded-md hover:bg-[#9b9ba2b9] '>
+                                        <button className='xl:w-32 max-md:w-24  h-11 xl:text-base max-lg:text-base max-md:text-sm max-sm:text-[10px] bg-[#6d6d6e81] font-bold text-white ml-6 mt-7 max-sm:ml-3 max-sm:mt-3 max-sm:w-14 max-sm:h-10 rounded-md hover:bg-[#9b9ba2b9] '>
                                           More Info
                                         </button>
 

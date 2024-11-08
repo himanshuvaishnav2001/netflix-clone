@@ -34,14 +34,14 @@ export default function FooterPage() {
             <div className='bg-black pt-16  bottom-0 w-full '>
 
 
-                            <div className=' pl-44 pb-10 text-[18px] text-[#ffffffb3]'>
+                            <div className=' pl-44  pb-10 text-[18px] max-sm:pl-14 max-sm:text-[12px] text-[#ffffffb3]'>
                                     
                                     <h1>
                                         Questions? Call <a href='#' className='underline'> 000-800-919-1694  </a>
                                     </h1>
                                 </div>
             
-                            <div className='bg-black flex flex-wrap pl-44 pb-10 '>
+                            <div className='bg-black flex flex-wrap pl-44 pb-10 max-sm:pl-14 max-sm:text-[12px] '>
 
                                 
 
@@ -55,7 +55,7 @@ export default function FooterPage() {
                             </div>
 
 
-                            <div className=' pl-44 pb-10 text-[18px] text-white'>
+                            <div className=' pl-44 pb-10 text-[18px] text-white max-sm:pl-14 max-sm:text-[12px]'>
                                     
                                     <select className='text-center w-32 h-8 bg-transparent border-[1px] rounded-[3px]  border-neutral-600'>
                                         <option className='bg-black'>  English  </option>
@@ -64,7 +64,7 @@ export default function FooterPage() {
                             </div>
 
 
-                            <div className=' pl-44 pb-28 text-[16px] text-[#ffffffb3]'>
+                            <div className=' pl-44 pb-28 text-[16px] text-[#ffffffb3] max-sm:pl-14 max-sm:text-[12px]'>
                                     
                                     <h1>
                                         Netflix India
@@ -90,7 +90,7 @@ export default function FooterPage() {
 function FooterBoxs({items}){
     return(
         <>
-            <div className='flex flex-col pr-40 text-[16px] text-[#ffffffb3]'>
+            <div className='flex flex-col pr-40 max-sm:pr-12 text-[16px] text-[#ffffffb3] max-sm:text-[12px]'>
                 <div className='mb-3'>
                     
                         <a href='#' className=' underline' > {items.item1} </a>
@@ -112,7 +112,7 @@ function FooterBoxs({items}){
                 </div>
 
 
-                <div className='mb-3'>
+                <div className='mb-3  '>
                     
                     <a href='#' className=' underline'> {items.item4} </a>
                     

@@ -77,12 +77,12 @@ const newData =  function handler() {
            </div>
             <div className='bg-[#000000fc]'>
 
-              <div className='ml-40'><h1 > Trending Now </h1></div>
+              <div className='ml-40 max-sm:ml-10'><h1 > Trending Now </h1></div>
 
               {/* ----------------movies part--------------- */}
 
 
-              <div className='flex flex-wrap ml-44 '> 
+              <div className='flex flex-wrap ml-44 max-sm:ml-14 '> 
 
                 { Data.map((val,idx)=>{
                   return(
@@ -100,13 +100,13 @@ const newData =  function handler() {
 
            {/* ------------------- More reasons to join Part ------------------------ */}
 
-                          <div className='bg-[#000000fc]'>
+                          <div className='bg-[#000000fc] '>
 
-                              <div className='ml-40 font-bold text-2xl text-white'><h1 className='pt-10'> More reasons to join </h1>
+                              <div className='ml-40 font-bold text-2xl text-white max-sm:ml-5 max-sm:text-lg '><h1 className='pt-10'> More reasons to join </h1>
                               </div>
 
 
-                              <div className='flex flex-wrap ml-40'>
+                              <div className='flex flex-wrap ml-40 max-sm:ml-8 '>
                                       {ReasonData.map((val,idx) => {
                                         return(
                                                   <Join items={val} key={idx} />
@@ -130,13 +130,13 @@ const newData =  function handler() {
   return (
 
     
-    <div className='h-[250px] ml-6 mt-10 text-white'>
+    <div className='h-[250px] max-sm:h-[170px] ml-6 mt-10 text-white'>
       
       
-      <div className='h-[250px] w-[220px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300'>
-        <img src={items.body} className='h-[230px] w-[180px] rounded-[10px]' />
+      <div className='h-[250px] w-[220px] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300 max-sm:w-[180px] max-sm:h-[170px] '>
+        <img src={items.body} className='h-[230px] w-[180px] rounded-[10px] max-sm:w-[150px] max-sm:h-[180px]' />
       
-        <h1 className='ml-[-25px] mt-[-70px] w-10 h-10 text-[100px] text-black ' style={{WebkitTextStroke:'1px #fff'}} > {items.title} 
+        <h1 className='ml-[-25px] mt-[-70px] w-10 h-10 text-[100px] text-black max-sm:text-[80px] ' style={{WebkitTextStroke:'1px #fff'}} > {items.title} 
               {/* <h1 className='ml-[5px] mt-[-28px] w-10 h-10 text-[145px] text-black  ' > {items.title} 
 
               </h1> */}
@@ -166,17 +166,17 @@ function Join({items}){
             
 
 
-            <div className='mt-6  size-72 rounded-3xl' style={{background: 'linear-gradient(149deg, #192247 0%, #210e16 99.08%)'}}>
+            <div className='mt-6  size-72 rounded-3xl max-sm:size-56' style={{background: 'linear-gradient(149deg, #192247 0%, #210e16 99.08%)'}}>
 
                 {/* ----------------for heading part---------------- */}
 
-                  <div className='pl-5 pt-6 text-white font-bold text-xl'>
+                  <div className='pl-5 pt-6 text-white font-bold text-xl max-sm:text-[16px] '>
                       <h1> {items.title} </h1>
                   </div>
 
                 {/* ----------------for body part ---------------- */}
 
-                  <div className='pt-4 pl-5 pr-2 text-white'>
+                  <div className='pt-4 pl-5 pr-2 text-white max-sm:text-[12px]'>
                       <p> {items.body} </p>
                   </div>
 
@@ -184,7 +184,7 @@ function Join({items}){
                 {/* ----------------for Icon Part---------------- */}
 
 
-                  <div className='flex justify-center w-20 h-12 relative left-48 top-16'>
+                  <div className='flex justify-center w-20 h-12 relative left-48 top-16 max-sm:left-40 max-sm:top-12 max-sm:w-10 max-sm:h-6'>
                     <img src={items.photo} className='' />
                   </div>
 

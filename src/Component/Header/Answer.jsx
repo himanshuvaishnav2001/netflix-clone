@@ -36,7 +36,7 @@ export default function Answer() {
             <div className=' mt-[-50px]  pt-[70px] bg-[#000000fc]'>
 
               <div> 
-                    <h1 className='mb-10 pt-[40px] pl-40 text-white text-2xl  '> Frequently Asked Questions </h1>
+                    <h1 className='mb-10 pt-[40px] pl-40 text-white text-2xl max-sm:text-[16px] max-sm:pl-5 '> Frequently Asked Questions </h1>
               </div>
 
               <div>
@@ -53,7 +53,7 @@ export default function Answer() {
 
               <div className='h-52'>
                     <div>
-                        <h1 className='text-white  text-center pt-10'>
+                        <h1 className='text-white  text-center pt-10 max-sm:pl-0 max-sm:text-[13px]'>
                         Ready to watch? Enter your email to create or restart your membership.
                         </h1>
                     </div>
@@ -64,10 +64,10 @@ export default function Answer() {
 
                     <div className='flex justify-center mt-4'>
                         <div className='mr-2 '>
-                            <input placeholder='Email address' className='xl:text-[16px] pl-5 xl:w-[550px] md:text-lg sm:text-sm md:w-64 sm:w-44 h-14 bg-[rgba(0,0,0,0.1)] border-[1px] rounded-[3px]  border-neutral-600' />
+                            <input placeholder='Email address' className='xl:text-[16px] pl-5 xl:w-[550px] max-md:text-lg max-sm:text-[14px] max-md:w-64 max-sm:w-44 h-14 bg-[rgba(0,0,0,0.1)] border-[1px] rounded-[3px]  border-neutral-600' />
                         </div>
                         <div> 
-                            <button className='xl:text-2xl md:text-lg sm:text-sm md:w-32 sm:w-24 xl:w-52 h-14 bg-[#de3232] text-white font-bold rounded-[6px]'>
+                            <button className='xl:text-2xl max-md:text-lg max-sm:text-[10px] max-md:w-32 max-sm:w-16 max-xl:w-52 h-14 bg-[#de3232] text-white font-bold rounded-[6px]'>
                                 {"Get Started >" }
                             </button>
                         
@@ -94,13 +94,13 @@ function FAQ({items}){
 
         <div className='pb-2 '>
 
-                  <div className='pl-10 h-20 flex place-items-center ml-40  mr-40 text-white cursor-pointer bg-customGray transition ease-in-out delay-300 duration-500 hover:bg-[#4f4c4cc8] ' 
+                  <div className='pl-10 h-20  flex place-items-center ml-40 max-sm:ml-10  mr-40 max-sm:mr-10 text-white cursor-pointer bg-customGray transition ease-in-out delay-300 duration-500 hover:bg-[#4f4c4cc8] ' 
                   onClick={toggleFAQ}
                   role="button"
                   aria-expanded={isOpen} >
                       
                 
-                      <h1 className='text-white xl:text-2xl md:text-xl sm:text-lg '>{items.Title}</h1>
+                      <h1 className='text-white xl:text-2xl md:text-xl max-sm:text-[13px]  '>{items.Title}</h1>
 
                     </div>
                     
@@ -113,7 +113,7 @@ function FAQ({items}){
                   </div> */}
 
                     {isOpen && (
-                            <div className='border-t-[1px] border-black pt-10 flex place-items-center ml-40 mr-40' style={{ backgroundColor: 'rgb(45, 45, 45)' }}>
+                            <div className='border-t-[1px] border-black pt-10 flex place-items-center ml-40 max-sm:ml-10 max-sm:mr-10 max-sm:text-[12px] mr-40' style={{ backgroundColor: 'rgb(45, 45, 45)' }}>
                               <p className='ml-10 mr-10 mb-10 text-white'>
                                 {items.body}
                                 {items.body2 && (
